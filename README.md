@@ -33,5 +33,5 @@ $ npm install create-react-template
 
 ## Usage
 ```
-$ create react-template
+$ create-react-template
 ```

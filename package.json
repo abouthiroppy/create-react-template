@@ -20,6 +20,10 @@
   "engines": {
     "node": ">=4"
   },
+  "repository": {
+    "url": "git+https://github.com/abouthiroppy/create-react-template.git",
+    "type": "git"
+  },
   "scripts": {
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "lint": "eslint .",
