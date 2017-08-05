@@ -1,0 +1,4 @@
+const {{name}} = (store) => (next) => (action) => {
+};
+
+export default {{name}};
