@@ -1,0 +1,35 @@
+import React from 'react';
+{{#if hasStyle}}
+import styles from './style.css';
+{{/if}}
+
+{{#if isStateless}}
+const {{name}} = (props) => (
+  {{#if isStateless}}
+  <div className={styles.container}>
+  {{else}}
+  <div>
+  {{/if}}
+  </div>
+);
+{{else}}
+class {{name}} extends React.Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+
+  render() {
+    return (
+      {{#if isStateless}}
+      <div className={styles.container}>
+      {{else}}
+      <div>
+      {{/if}}
+      </div>
+    );
+  }
+}
+{{/if}}
+
+export default {{name}};
