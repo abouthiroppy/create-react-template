@@ -1,6 +1,5 @@
 {
   "name": "create-react-template",
-  "main": "bin/index.js",
   "author": "(http://about-hiroppy.com) abouthiroppy <git@about-hiroppy.com>",
   "version": "0.2.0",
   "license": "MIT",
@@ -18,7 +17,7 @@
     "create-react-template": "bin/index.js"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "repository": {
     "url": "git+https://github.com/abouthiroppy/create-react-template.git",
