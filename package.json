@@ -45,7 +45,7 @@
     "inquirer": "^3.0.1"
   },
   "devDependencies": {
-    "ava": "^0.16.0",
+    "ava": "^0.21.0",
     "conventional-changelog-cli": "^1.2.0",
     "eslint": "^3.14.1",
     "eslint-config-sky": "^1.4.3",
