@@ -1,0 +1,27 @@
+import { createStore, applyMiddleware, compose } from 'redux';
+{{#if hasSaga}}
+import createSaga from 'redux-saga';
+{{/if}}
+import rootReducer from '../reducers';
+{{#if hasSaga}}
+import mySaga from '../sagas';
+
+const saga = createSaga();
+{{/if}}
+
+const enhancer = compose(applyMiddleware(
+  {{#if hasSaga}}
+  saga
+  {{/if}}
+));
+
+const configureStore = (initialState) => {
+  const store = createStore(rootReducer, initialState, enhancer);
+
+  {{#if hasSaga}}
+  saga.run(mySaga);
+  {{/if}}
+  return store;
+};
+
+export default configureStore;
